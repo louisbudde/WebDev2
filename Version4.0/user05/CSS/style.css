@@ -1,21 +1,137 @@
+@import url(rainbow.css);
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    border-radius: 8px;
+}
+
+.button2 {
+    border-radius: 30%;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+td {
+    padding: 20px;
+}
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
 }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+.seven {
+    width: 100px;
+    height: 50px;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 3px;
+}
+
+.six {
+    width: 100px;
+    height: 60px;
+    background-color: blueviolet;
+    border: forestgreen;
+    border-radius: 3px;
+}
+
+.eight {
+    width: 150px;
+    height: 30px;
+    background-color: blueviolet;
+    border: black;
+    border-radius: 7px;
+}
+
+.title {
+    color: red;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+    font-size: 2rem;
+}
+
+.title-small {
+    font-size: .5rem;
+}
+
+* {
+    text-align: right;
+    border: 2px solid black;
+}
+
+p+* {
+    background-color: #FFFF00;
+}
+
+#knowledge>* {
+    border: 3px red solid;
+}
+
+div li::marker {
+    color: red;
+}
+
+.background-red:hover {
+    background-color: blue;
+}
+
+.background-orange:hover {
+    background-color: yellow;
+}
+
+.background-yellow:hover {
+    background-color: red;
+}
+
+.background-green:hover {
+    background-color: indigo;
+}
+
+.background-blue:hover {
+    background-color: green;
+}
+
+.background-indigo:hover {
+    background-color: violet;
+}
+
+.background-violet:hover {
+    background-color: orange;
+}
+
+p:first-child {
+    color: blue;
+}
+
+p:first-child i {
+    color: blue;
+}
+
+td:hover {
+    background-color: palegreen;
 }

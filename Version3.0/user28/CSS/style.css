@@ -5,17 +5,29 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #21d32162;
+	
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #21d321ee;
 }
+td{
+	width:20vw;
+}
+
+body {
+	background-image: url("https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg");
+}
+
+ul.b {list-style-type: disc;}
+
+ol.d {list-style-type: armenian;}

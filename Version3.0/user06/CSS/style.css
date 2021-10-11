@@ -5,17 +5,35 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
+
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#c5c5c557; 
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #585858;
+}
+
+body {
+	
+	background-image: url("https://mykeyboard.eu/media/cache/a5/51/a551134d08cbe9d502edd2e9e7d51b5f.jpg");
+
+}
+  
+p {   
+	padding: 20px 10px;  /* Vertical  Horizontal */
+	}
+
+	p{
+		padding: 5px 50px 30px 5px;
+		background-color: lavender;
+		margin-top: 25px;
+		margin-bottom50px;
 }

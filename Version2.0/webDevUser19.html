@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>User ## Version 2.0 </title>
+    <title>Josh Grone WebDev Version 2.0 </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,11 +19,72 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner {
+            border: 5px outset blue;
+            background-color: rgb(167, 210, 236);
+            text-align: center;
+        }
 
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: rgb(0, 217, 255);
+            margin-top: 2rem;
+        }
+
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 20%;
+        }
+
+        .right.eye {
+            right: 20%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 25]%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
+
+        section {
+            background-color: #c5c5c5;
+        }
     </style>
 </head>
 
 <body>
+
     <main class="wideMargin">
 
         <!-- Your 1st Heading-->
@@ -37,19 +98,66 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <abbr title="World Health Organization"> WHO </abbr>
+            <h1><del>This is my first heading.</del></h1>
+            <h2><ins>I made another one.</ins></h2>
+            <h3><sub>This next one is just a smile.</sub><sup>:D</sup></h3>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-
+            <h4><small>:)</small> </h4>
+            <h5><progress value="69" max="100"> </progress> I don't know anymore</h5>
+            <h6>Something interesting.
+                <hr>
+            </h6>
             <h2>Examples of "Other" HTML elements</h2>
 
-            <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
 
+            <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            <img src="https://agilewarrior.files.wordpress.com/2014/04/cirlce-illustrator.png?w=584&h=561">
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+            is this a banner?
         </div>
         <div id="face">
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
+        </div>
+        <div>
+            <h1>Kevin</h1>
+            <section>
+                <h2>Kevin does not like tomatoes. </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Lectus quam id leo in vitae turpis. Nec tincidunt praesent semper
+                        feugiat nibh sed. Viverra adipiscing at in tellus. Amet commodo nulla facilisi nullam vehicula
+                        ipsum a arcu cursus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Dignissim
+                        enim sit amet venenatis urna cursus eget. Faucibus purus in massa tempor nec feugiat nisl
+                        pretium fusce. Pharetra vel turpis nunc eget lorem dolor sed viverra. Sed vulputate mi sit amet
+                        mauris commodo quis imperdiet. Mi bibendum neque egestas congue quisque egestas diam in arcu.
 
+                    </p>
+
+            </section>
+
+            <section>
+                <h2>Tomatoes are gross.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Lectus quam id leo in vitae turpis. Nec tincidunt praesent semper feugiat
+                    nibh sed. Viverra adipiscing at in tellus. Amet commodo nulla facilisi nullam vehicula ipsum a arcu
+                    cursus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Dignissim enim sit amet
+                    venenatis urna cursus eget. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Pharetra
+                    vel turpis nunc eget lorem dolor sed viverra. Sed vulputate mi sit amet mauris commodo quis
+                    imperdiet. Mi bibendum neque egestas congue quisque egestas diam in arcu.
+
+                </p>
+            </section>
         </div>
     </main>
 
@@ -57,7 +165,7 @@
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[Josh Grone]</a></center>
         </p>
 
     </footer>

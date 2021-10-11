@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name: Lisa Latzelsberger
+        Date Completed: 09/10/2021
     -->
 
 <head>
 
-    <title>User ## Version 2.0 </title>
+    <title>Painting Version 2.0 </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,7 +19,67 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        section{
+            background-color: rgba(25, 230, 196, 0.226);
+        }
+        
+        #banner {
+            border: 5px outset rgba(25, 230, 230, 0.459);
+            background-color: rgba(94, 255, 0, 0.438);
+            text-align: center;
+        }
 
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: rgba(94, 255, 0, 0.329);
+            margin-top: 2rem;
+        }
+
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 15%;
+        }
+
+        .right.eye {
+            right: 15%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: rgb(0, 0, 0);
+        }
     </style>
 </head>
 
@@ -37,19 +97,56 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1>Painting is a form of Art</h1>
+            <h2>Painting & drawing are the same but use different utensels</h2>
+            <h3>Drawing uses penciels and color pencels, while paintings are made using paint</h3>
+            <h4>Canveses and and wood are good materials to use paint because paiper can easely curl up</h4>
+            <h5>Paintings quality depends on the technic used on the painting</h5>
+            <h6>All the information is from my own expiriences</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <del>Art</del>
+            <ins>is</ins>
+            <sub>paint</sub>
+            <sup>and</sup>
+            <small>paint</small>
+            <hr>is
+            <abbr title="World Health Organization">Art</abbr>
+            <progress value="22" max="100"></progress>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
-        <div id="banner">
-        </div>
-        <div id="face">
 
+        <div>
+            <h1>Art</h1>
+            <section>
+                <h2>Art are made out of Digital and visual art</h2>
+                <p>visual art is with paint or pencel like the examples mentioned before</p>
+            </section>
+
+            <section>
+                <h2>Digital Art</h2>
+                <p>Digital art can be anything that is made digatialy</p>
+            </section>
+        </div>
+
+        <div id="banner">
+            Digidal Painting
+        </div>
+
+        <div id="face">
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
         </div>
     </main>
 

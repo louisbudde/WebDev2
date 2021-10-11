@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>User ## Version 2.0 </title>
+    <title> Version 2 WD - ADUNK </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,13 +19,83 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        section{
+            background-color: silver;
+        }
+        #banner {
+            border: 20px outset rgb(255, 255, 255);
+            background-color: rgb(192, 248, 255);
+            text-align: center;
+        }
 
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: rgb(89, 0, 255);
+            margin-top: 2rem;
+        }
+
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 30%;
+        }
+
+        .right.eye {
+            right: 10%;
+        }
+
+        .pupil {
+            background: red;
+            width: 30%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 85%;
+            left: 10%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: rgb(255, 0, 255);
+        }
     </style>
 </head>
 
 <body>
     <main class="wideMargin">
+        <h1>PUT YOUR BIG TITLE HERE</h1>
+        <section>
+            <h2>Introduction or 1st Point</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet tellus cras adipiscing enim. Donec et odio pellentesque diam. Massa id neque aliquam vestibulum. Velit euismod in pellentesque massa placerat duis ultricies. Orci dapibus ultrices in iaculis nunc sed augue lacus viverra. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Quisque egestas diam in arcu cursus euismod. Rutrum quisque non tellus orci ac auctor. Ut porttitor leo a diam. Eget nulla facilisi etiam dignissim diam. Nulla facilisi cras fermentum odio eu feugiat pretium. Quam viverra orci sagittis eu volutpat odio facilisis mauris. Egestas maecenas pharetra convallis posuere. Hendrerit dolor magna eget est lorem. Risus at ultrices mi tempus imperdiet. Varius quam quisque id diam vel quam.
 
+                Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Fames ac turpis egestas maecenas pharetra convallis posuere. Nullam vehicula ipsum a arcu cursus vitae. Duis ut diam quam nulla porttitor massa. Ac felis donec et odio pellentesque diam volutpat. Lacus viverra vitae congue eu consequat ac. Sit amet luctus venenatis lectus magna fringilla urna. Scelerisque eu ultrices vitae auctor eu augue ut. At urna condimentum mattis pellentesque id nibh tortor id aliquet. Tempus egestas sed sed risus pretium quam vulputate dignissim. Id venenatis a condimentum vitae sapien. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Nullam ac tortor vitae purus faucibus ornare.</p>
+        </section>
+
+        <section>
+            <h2>2nd Point</h2>
+            <p>Content in here that explains your 2nd point</p>
+        </section>
         <!-- Your 1st Heading-->
         <h1>About Me</h1>
         <div id="tags">
@@ -37,19 +107,41 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1>This is very cool</h1>
+            <h2>I am just starting to learn this</h2>
+            <h3> does this count as an emoji :)</h3>
+            <h4> H4</h4>
+            <h5> its kinda cool that it adds the ending</h5>
+            <h6>ayeee</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <del>Does this get a line through it?</del>
+            <ins>Underline</ins>
+            <sub>Something math related?</sub>
+            <sup>sup</sup>
+            <small>tiny</small>
+            <progress value="22" max="100"> </progress> -
+            <hr>Sideways line</hr>
+            <abbr title="World Health Organization">
+                <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+            Any text it does not matter!!
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
         </div>
     </main>
 

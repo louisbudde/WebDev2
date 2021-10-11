@@ -9,13 +9,17 @@ table {
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 20px solid #ff0fd793;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#7b0c91b9; 
+	
 }
 
 th {
 	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
-}
+	color: #8100b4a4;
+	background-color: #d502ffb9;
+} body {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiTpEkdp6jDxLmCGb34BYPuWUji-R_8we1Xg&usqp=CAU");
+   } 
+   

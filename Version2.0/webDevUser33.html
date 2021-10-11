@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>User ## Version 2.0 </title>
+    <title>Title Version 2.0 </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,12 +19,73 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        section {
+            background-color: rgb(236, 236, 236);
+        }
 
+
+        #banner {
+            border: 5px outset violet;
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: rgb(55, 69, 100);
+            margin-top: 2rem;
+        }
+
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 50%;
+        }
+
+        .right.eye {
+            right: 50%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 100%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 40%;
+            border-top-color: rgb(107, 165, 15);
+        }
     </style>
 </head>
 
 <body>
-    <main class="wideMargin">
+    <main class="wideMargin">x
 
         <!-- Your 1st Heading-->
         <h1>About Me</h1>
@@ -37,18 +98,79 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-
+            <h1>This Is Heading 1</h1>
+            <h2>This is Heading 2</h2>
+            <h3>This is Heading 3</h3>
+            <h4>This is Heading 4</h4> <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <h5>This is Heading 5</h5>
+            <h6>This is Heading 6</h6>
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <del>Title</del>
+            <ins>Title</ins>
+            <sub>Title</sub>
+            <sup>Title</sup>
+            <small>Title</small>
+            <progress value="22" max="100"> Title</progress>
+            <hr>Title
+            <abbr title="Title">Tit</abbr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
-        <div id="banner">
+        <div>
+            <h1>TITLE</h1>
+            <section>
+                <h2>Introduction or 1st Point</h2>
+                <p>Content in here that explains your 1st point</p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ac turpis egestas sed tempus urna et. Mi in nulla posuere sollicitudin aliquam
+                ultrices. Arcu risus quis varius quam. Nulla pellentesque dignissim enim sit amet venenatis urna cursus
+                eget. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Consequat id porta nibh venenatis
+                cras sed. Dignissim suspendisse in est ante in. In hac habitasse platea dictumst vestibulum rhoncus est
+                pellentesque elit. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Urna nunc id
+                cursus metus aliquam eleifend mi. Nam at lectus urna duis convallis convallis tellus. At tempor commodo
+                ullamcorper a lacus. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Libero nunc consequat
+                interdum varius sit amet mattis vulputate enim. Morbi tincidunt ornare massa eget egestas purus viverra
+                accumsan in. Iaculis at erat pellentesque adipiscing. Nulla pellentesque dignissim enim sit amet
+                venenatis urna cursus. Tempus urna et pharetra pharetra massa massa.
+                </p>
+                <p>
+                    Mauris nunc congue nisi vitae suscipit tellus mauris. Pulvinar pellentesque habitant morbi tristique
+                    senectus et. Et odio pellentesque diam volutpat. At augue eget arcu dictum varius. Neque convallis a
+                    cras semper auctor neque vitae tempus quam. Nulla facilisi morbi tempus iaculis urna id. Etiam non
+                    quam
+                    lacus suspendisse. Faucibus turpis in eu mi bibendum. Faucibus vitae aliquet nec ullamcorper sit
+                    amet
+                    risus nullam eget. Elementum eu facilisis sed odio morbi. Et pharetra pharetra massa massa
+                    ultricies.
+                    Nunc sed id semper risus in hendrerit gravida. Scelerisque purus semper eget duis at tellus at urna.
+                    Vel
+                    pharetra vel turpis nunc eget lorem dolor sed. Vitae turpis massa sed elementum. Nisl tincidunt eget
+                    nullam non nisi est sit amet. Mi bibendum neque egestas congue quisque.
+
+
+            </section>
+
+            <section>
+                <h2>2nd Point</h2>
+                <p>Content in here that explains your 2nd point</p>
+
+            </section>
         </div>
-        <div id="face">
+
+        <div id=banner> This is The Title
+        </div>
+        <div id=face> This is The Title
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
 
         </div>
     </main>

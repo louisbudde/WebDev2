@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name: Lisa Latzelsberger
+        Date Completed: 09/29/2021
+    -->
+
+<head>
+
+    <title>Gallery</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WebDev Version 4.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap);
+        @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+        menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        #rainbow {
+            width: 100%;
+        }
+
+        p.caption {
+            color: rgb(255, 0, 0);
+        }
+
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3 title" tabindex="0">Check out my favorite images</h1>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <div id="gallery">
+            <p>Hover over the images to get the answer</p>
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://cdn5.vectorstock.com/i/1000x1000/99/84/fashion-with-hand-drawn-female-eye-beautiful-art-vector-21469984.jpg"
+                            alt="Broun eye with birds coming from eyelash">
+                        <p class="caption">Art component</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://www.sciencedirect.com/topics/engineering/detail-drawing" target="_blank">
+                            <h1>Detail drawing</h1>
+                        </a>
+                        <p class="description">A drawing of an eye which is abstract because flowers and birds ar coming
+                            from the eyelash of the eye.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://i0.wp.com/i.ytimg.com/vi/ZUCHi_2ncPQ/maxresdefault.jpg"
+                            alt="woman siting in a sickle shaped moon">
+                        <p class="caption">Art component</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Figure_drawing" target="_blank">
+                            <h1>Figure drawing</h1>
+                        </a>
+                        <p class="description">An abstract drawing of a woman siting in a moon wearing a long gown
+                            sorounded by flowers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://lh3.googleusercontent.com/proxy/nhv3zMEP8IZUYslNvXInbBX_qKfgtJDohTp3klEEwif3uwtst5jgyGgCZIqXbGyHiqRsDa2Xo0ayTl_xHS3oIdPqzo3t0elKLb96y55e1qBAtx8NGgfV21o"
+                            alt="Pink flower painting">
+                        <p class="caption">Art component</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://www.artzolo.com/nature-paintingst" target="_blank">
+                            <h1>Nature painting</h1>
+                        </a>
+                        <p class="description">A flower which is a part of nature painted in a realistic way but with an
+                            color that is not seen often in flowers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="flipper">
+                <div class="front">
+                    <img src="https://i.pinimg.com/originals/e8/76/04/e876047398b2209840f2401546c146fb.jpg"
+                        alt="girl disapering with the air and watter around her">
+                    <p class="caption">Art component</p>
+                </div>
+                <div class="back">
+                    <a href="https://en.wikipedia.org/wiki/Digital_painting" target="_blank">
+                        <h1>Digital painting</h1>
+                    </a>
+                    <p class="description">A painting made using the computer to make affects which are hard to paint on
+                        canvas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer>
+        <span class="title">Example of a Footer Title</span>
+        <table id="footerTable">
+            <tr>
+                <td>
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

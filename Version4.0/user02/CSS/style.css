@@ -1,21 +1,98 @@
-table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+@import url(rainbow.css);
+.button {
+	background-color: #ccb0ec;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button-largeRadius {
+	border-radius: 8px;
+}
+
+.button-largeRadius{
+	box-shadow: 0 9px 17px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+   }
+   .button2:hover {
+	box-shadow: 0 13px 17px 0 rgba(0, 0, 0, 0.25), 0 18px 51px 0 rgba(0, 0, 0, 0.20);
+   }
+.button2 {
+	border-radius: 30%;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.7s;
+}
+
+.button span:after {
+   content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.7s;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+	background-color:#bc80ea;
+}
+.button4 {border-radius: 12px;}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.button:hover {
+	background-color: #9de2e7;
+	color: rgb(224, 153, 221);
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+	background-color:#bb7eeb;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.red {
+	background-color: #a1d5f3;
+}
+
+td{
+	padding:20px;
+}
+
+table{
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
-}
-
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+}.title{
+	color: rgb(231, 130, 130);
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+  *{
+    text-align:right;
+    border: 2px solid hsl(0, 0%, 100%);
 }

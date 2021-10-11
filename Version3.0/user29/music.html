@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 3.0
+        Name:
+        Date Completed:
+    -->
+
+<head>
+
+    <title>Best songs. No arguments.</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My Favorite Music">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,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" />
+ 
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+
+        body {
+            background: url(https://www.clashmusic.com/sites/default/files/field/image/London-1-3.jpg);
+            background-repeat: no-repeat;
+            background-size: 1450px 2100px;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #ff0000;
+            overflow: hidden;
+            opacity: 50%;
+            width: 100%;
+            height: 0;
+            transition: .8s ease-in-out;
+        }
+
+        .overlay2 {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #ff7b00;
+            overflow: hidden;
+            opacity: 50%;
+            width: 100%;
+            height: 0;
+            transition: .8s ease-in-out;
+        }
+
+        .overlay3 {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #fffb00;
+            overflow: hidden;
+            opacity: 50%;
+            width: 100%;
+            height: 0;
+            transition: .8s ease-in-out;
+        }
+
+        .overlay4 {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #00ff0d;
+            overflow: hidden;
+            opacity: 50%;
+            width: 100%;
+            height: 0;
+            transition: .8s ease-in-out;
+        }
+
+        .overlay5 {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #00c3ff;
+            overflow: hidden;
+            opacity: 50%;
+            width: 100%;
+            height: 0;
+            transition: .8s ease-in-out;
+        }
+
+        .overlay6 {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #9005ac;
+            overflow: hidden;
+            opacity: 50%;
+            width: 100%;
+            height: 0;
+            transition: .8s ease-in-out;
+        }
+
+        .container:hover .overlay {
+            bottom: 0;
+            height: 30%;
+        }
+
+        .container:hover .overlay2 {
+            bottom: 0;
+            height: 30%;
+        }
+
+        .container:hover .overlay3 {
+            bottom: 0;
+            height: 30%;
+        }
+
+        .container:hover .overlay4 {
+            bottom: 0;
+            height: 30%;
+        }
+
+        .container:hover .overlay5 {
+            bottom: 0;
+            height: 30%;
+        }
+
+        .container:hover .overlay6 {
+            bottom: 0;
+            height: 30%;
+        }
+
+        .text {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link active" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3" tabindex="0">Music</h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <h2>My Top 6 Favorite Songs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Artist</th>
+                    <th>Song</th>
+                    <th>Album Art</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>1.</td>
+                <td>Cigarettes After Sex </td>
+                <td><b><i>Kiss it off me</i></b></td>
+                <td class="container"><img src="images/cas.jpeg" height="150px" width="150p"
+                        alt="Picture of album cover for 'Cry' album - Stormy weather over a vast ocean">
+                    <div class="overlay">
+                        <div class="text">Kiss it off me</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Troye Sivan</td>
+                <td><b><i>could cry just thinkin about you</i></b></td>
+                <td class="container"><img src="images/troye.png" height="150px" width="150p"
+                        alt="Picture of song cover for 'could cry just thinkin about you' - Troye sitting on a poolside looking meloncholy">
+                    <div class="overlay2">
+                        <div class="text">could cry just thinkin about you</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Bongi</td>
+                <td><b><i>Hollywood</i></b></td>
+                <td class="container"><img src="images/BONGI9.png" height="150px" width="150p"
+                        alt="Picture of song cover for 'Hollywood' - Bongi holding a cake decorated with an instagram heart">
+                    <div class="overlay3">
+                        <div class="text">Hollywood</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>LOUD HOUND</td>
+                <td><b><i>I Hate California</i></b></td>
+                <td class="container"><img src="images/hound.jpeg" height="150px" width="150p"
+                        alt="Picture of song cover for 'I Hate California' - LOUD HOUND casually looking down at the photographer">
+                    <div class="overlay4">
+                        <div class="text">I Hate California</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>glaive</td>
+                <td><b><i>hey hi hyd</i></b></td>
+                <td class="container"><img src="images/glaive.jpg" height="150px" width="150p"
+                        alt="Picture of album cover for 'Cypress Grove' album - Glaive standing under a street sign labeled 'Cypress Grove'">
+                    <div class="overlay5">
+                        <div class="text">hey hi hyd</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Oscar Anton</td>
+                <td><b><i>Bye Bye</i></b>
+                </td>
+                <td class="container"><img src="https://m.media-amazon.com/images/I/61mQNXudODL._SS500_.jpg"
+                        height="150px" width="150p"
+                        alt="Picture of song cover for 'Bye Bye' - Oscar stalling in water looking off into the horizon">
+                    <div class="overlay6">
+                        <div class="text">Bye Bye</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Summary Test.
+                <td style="color:#ffffff; background-color:#ffccff;"></td>
+
+
+        </table>
+    </main>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer class="wideMargin">
+        <div>
+            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>,<a
+                href="https://open.spotify.com/search"> Spotify</a>
+        </div>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

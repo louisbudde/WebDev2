@@ -1,0 +1,42 @@
+.background-red {
+    background-color: red;
+}
+
+.background-orange {
+    background-color: orange;
+}
+
+.background-yellow {
+    background-color: yellow;
+}
+
+.background-green {
+    background-color: green;
+}
+
+.background-blue {
+    background-color: blue;
+}
+
+.background-indigo {
+    background-color: rgb(123, 9, 146);
+}
+
+.background-violet {
+    background-color: violet;
+}
+  p:first-child {
+    background-color: rgb(0, 217, 255);
+  }
+  :root {
+    background: #08ff14;
+  }
+  :hover p {
+	display: block;
+  }
+  p:nth-last-child(2) {
+    background: rgb(255, 145, 0);
+  }
+  h1:only-of-type {
+    background: #ff0000;
+  }
