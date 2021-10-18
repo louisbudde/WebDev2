@@ -15,7 +15,9 @@ tr {
 }
 
 th {
-	text-align: center;
+	text-align: center; 
 	color: #ffffff;
 	background-color: #003366;
 }
+
+body{background-image: url("../images/download.jpeg")}

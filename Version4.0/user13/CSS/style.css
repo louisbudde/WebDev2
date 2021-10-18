@@ -1,21 +1,108 @@
-table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+.button {
+	background-color: #af4caf;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 40%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td{
+	padding:20px;
+}
+
+table{
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+}
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+
+   #buttonlarge-Radius {
+	background-color: #0704aa; /* Green background */
+	border: 1px solid green; /* Green border */
+	color: white; /* White text */
+	padding: 10px 24px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left; /* Float the buttons side by side */
+  }
+  #morecontent {
+	background-color: yellow;
+  }
+  #content {
+	background-color: rgb(0, 255, 115);
+  }
+  /* The hire Buttons ID would change all of 
+  them I think because they are all called the same thing where ther 
+  footer table is more specific and would only change one thing */
+  
+  *{
+    text-align:center;  
 }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
-}
+#knowledge > * {
+	border: 3px red solid;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+
+  div li::marker{
+	color: red;
+  }
+  
+  div li::marker{
+	content:"😜 ";
+  }
+  td:hover {
+	background-color: black;
+  }
+  
+a:link {
+	color: #FF0000;
+  }
+  
+  
+  a:visited {
+	color: #00FF00;
+  }
+  
+  
+  a:hover {
+	color: #FF00FF;
+  }
+  
+  
+  a:active {
+	color: #0000FF;
+  }

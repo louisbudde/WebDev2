@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name:
+        Date Completed:
+    -->
+
+<head>
+
+    <title>Gallery</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WebDev Version 4.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+   
+        menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        #rainbow {
+            width: 100%;
+        }
+        
+         a {
+      color: black;
+        }
+        .container {
+    display: inline-block;
+    margin: 4%;
+    perspective: 1000px; 
+}
+.flipper {
+    position: relative;    
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: 320px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    backface-visibility: hidden;
+}
+.front{
+    z-index:2;
+}
+
+.back{
+    transform:rotateY(180deg);
+}
+img {
+  width: 100%;
+}
+.container, .front, .back {
+    width: 250px;
+    height: 320px;
+}
+
+.container:hover .flipper {
+  transform: rotateY(190deg);
+}
+
+        caption, .back h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.7em;
+  padding: 10px 10px 0 10px;
+  margin: 0;
+  text-align: center;
+}
+p.caption {
+  position: absolute;
+  bottom: 1vh;
+}
+
+.description {
+  font-size: 0.9em;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+}
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3 title" tabindex="0">Check out my favorite images</h1>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <div id="gallery">
+            <p>Hover over the images to get the answer</p>
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
+                  <p class="caption">Computer Part</p>
+                </div>
+                <div class="back">
+                  <a href="https://www.vice.com/en/section/tech" >
+                    <h1>Motherboard</h1>
+                  </a>
+                  <p class="description">a printed circuit board containing the principal components of a computer or other device, with connectors into which other circuit boards can be slotted.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://sc04.alicdn.com/kf/H2d9c1b6b8d5748efb5cc2fca2c0ae8e2U.jpg" alt="RAM Stick">
+                  <p class="caption">Computer Part</p>
+                </div>
+                <div class="back">
+                  <a href="https://www.crucial.com/articles/about-memory/support-what-does-computer-memory-do">
+                    <h1>RAM</h1>
+                  </a>
+                  <p class="description">Your computer RAM is essentially short term memory where data is stored as the processor needs it.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://i.pcmag.com/imagery/roundups/011mqJbX48UXvfyLMvwkd1m-1..1569470764.jpg" alt="NVIDIA GPU">
+                  <p class="caption">Computer Part</p>
+                </div>
+                <div class="back">
+                  <a href="https://shop.nvidia.com/en-us/geforce/store/">
+                    <h1>GPU</h1>
+                  </a>
+                  <p class="description">What does GPU stand for? Graphics processing unit, a specialized processor originally designed to accelerate graphics rendering</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="gallery">
+            <p>Hover over the images to get the answer</p>
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/03/Intel-Rocker-Lake-2-e1615908186584.jpg" alt="ATX_Motherboard">
+                  <p class="caption">Computer Part</p>
+                </div>
+                <div class="back">
+                  <a href="https://techterms.com/definition/cpu" >
+                    <h1>CPU</h1>
+                  </a>
+                  <p class="description">A central processing unit, also called a central processor, main processor or just processor, is the electronic circuitry that executes instructions comprising a computer program</p>
+                </div>
+              </div>
+            </div>
+       
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer>
+        <span class="title">Example of a Footer Title</span>
+        <table id="footerTable">
+            <tr>
+                <td>
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

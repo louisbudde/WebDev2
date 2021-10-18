@@ -5,17 +5,30 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#62aaf193; 
 }
-
+body {
+	background-image: url("../images/cursedpic.jpeg");
+	background-size:1500px 1500px; /* width height */
+   }
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #64a0db;
+
+
 }
+
+p {
+	padding-top: 5px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 5px;
+	background-color: lavender;
+  }

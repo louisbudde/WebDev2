@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 6.0 
-    Name:  
-    Date Completed: 
+<!--Version 6.0
+    Name:
+    Date Completed:
 -->
 
 <head>
-    <title>JavaScript Examples</title>
+    <title>Home</title>
 
-    <!-- Bootstrap meta data -->
+    <!-- Homepage meta data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev JavaScript sample">
+    <meta name="description" content="Home Page">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"><!-- Animate -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -26,111 +29,116 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <style>
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
     </style>
 </head>
 
-<body class="body-wideMargin">
-    <script>
-        alert('Go Sabers!');
-    </script>
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6-md">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
-                    <button class="btn btn-danger btn-lg" onclick="firstSelector()">Try it</button>
+<body>
+    <!---------------------------------- Begin the nav-bar ----------------------------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <button class="btn btn-info btn-lg" onclick="secondSelector()">Try it</button>
-
-                    <button class="btn btn-dark btn-lg" onclick="thirdSelector()">Try it</button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
-                <div class="col-3-md">
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------------------------------->
 
-                </div>
+    <div class="wideMargin" id="content">
 
-                <div class="col-3-md">
-                    <h1>My shopping list</h1>
+        <h1 class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
 
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button>Add item</button>
-                    </div>
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <p>
+            This is my Home page!
+        </p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </div>
 
-                    <ul>
 
-                    </ul>
-                </div>
+    <!----------- Footer ------------>
 
+    <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h2>Logo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies.
+                    Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex
+                    mi ut
+                    sem.</p>
+                <p>© 2014 BS3 UI Kit, All rights reserved</p>
             </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu —</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="pages">
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Nature</a></li>
+                            <li><a href="#">Explores</a></li>
+                            <li><a href="#">Science</a></li>
+                            <li><a href="#">Advice</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
 
-            <script id="lists">
-                function firstSelector() {
-                    document.querySelector("li").style.backgroundColor = "red";
-                }
-                function secondSelector() {
-                    var x = document.querySelectorAll("li");
-                    var i;
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.backgroundColor = "#004500";
-                    }
-                }
-                function thirdSelector() {
-                    document.querySelector("ol ol li").style.backgroundColor = "#a2a2a2";
-                }
-            </script>
-            <script id="shopping">
-                const list = document.querySelector('ul');
-                const input = document.querySelector('input');
-                const button = document.querySelector('button');
-
-                button.onclick = function () {
-                    let myItem = input.value;
-                    input.value = '';
-
-                    const listItem = document.createElement('li');
-                    const listText = document.createElement('span');
-                    const listBtn = document.createElement('button');
-
-                    listItem.appendChild(listText);
-                    listText.textContent = myItem;
-                    listItem.appendChild(listBtn);
-                    listBtn.textContent = 'Delete';
-                    list.appendChild(listItem);
-
-                    listBtn.onclick = function (e) {
-                        list.removeChild(listItem);
-                    }
-
-                    input.focus();
-                }
-            </script>
-    </main>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-envelope-o"
+                                aria-hidden="true"></i></button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;">
+        <p>Designed by <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap</a></p>
+    </section>
 </body>
 
 </html>

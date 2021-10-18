@@ -1,0 +1,45 @@
+.background-red {
+    background-color: red;
+}
+
+.background-orange {
+    background-color: orange;
+}
+
+.background-yellow {
+    background-color: yellow;
+}
+
+.background-green {
+    background-color: green;
+}
+
+.background-blue {
+    background-color: blue;
+}
+
+.background-indigo {
+    background-color: indigo;
+}
+
+.background-violet {
+    background-color: violet;
+}
+td:hover {
+    background-color: black;
+  }
+  div:hover {
+    background-color: rgb(228, 182, 225);
+  }
+  a.highlight:hover {
+    color: #ff0000;
+    font-size: 22px;
+  } 
+/* visited link */
+a:visited {
+    color: rgb(135, 224, 220);
+  }
+  /* mouse over link */
+a:hover {
+    color: hotpink;
+  }
