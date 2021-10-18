@@ -1,0 +1,161 @@
+.body-wideMargin {
+  margin: 50px;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: Roboto;
+}
+button{
+  padding:5px;
+}
+
+ol {
+
+  list-style-type: decimal-leading-zero;
+}
+
+ol ol {
+  margin-left: 0.9em;
+}
+
+ol li {
+
+  line-height: 1.5;
+}
+
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+}
+.button {
+  border-radius: 8px;
+  font-size: 20px;
+  margin: 10px;
+  background-color: rgb(0, 81, 128);
+  color: rgb(255, 252, 217);
+}
+.blue {
+  background-color: rgba(0, 81, 128, 1);
+  padding: 20px;
+  color:rgb(255, 252, 217);
+}
+
+.darkblue {
+  background-color: rgb(74, 71, 247);
+}
+menu {
+  margin: 0px;
+  padding-inline-start: 0px;
+  margin-bottom: 20px;
+}
+.footer {
+  font-size: small;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+table {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+center {
+  text-align: center;
+}
+
+.side {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.grey {
+  background-color: rgb(168, 168, 168);
+  text-align: center;
+}
+.darkgrey {
+  background-color: rgb(66, 66, 66);
+  color: rgb(255, 252, 217);
+}
+
+.grid {
+  padding-left: 10px;
+  padding-left: 10px;
+  margin: 20px;
+font-size: 20px;
+}
+
+.ttd {
+  text-align: center;
+  background-color:rgba(248, 248, 0, 0.699);
+  border-radius: 3px;
+  border-color: rgba(190, 190, 3, 0.699);
+  padding: 10px;
+  font-size: 25px;
+}
+.img {
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.h3 {
+  padding: 20px;
+  background-color: rgb(20, 20, 134);
+  color: rgb(255, 252, 217);
+  margin: 20px;
+  text-align: center
+}
+.p {
+  font-size: large;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 40px;
+  background-color: rgba(248, 248, 0, 0.486);
+  text-align: center; }
+
+  .back {
+    background-color: rgba(248, 248, 0, 0.486);
+    padding-top: 15px;
+    
+  }
+
+  .border {
+    border-color: rgb(7, 9, 116);
+    border-width: 100px;
+  }
+
+  .img {
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .cont {
+    font-size: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .bottomzero {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
