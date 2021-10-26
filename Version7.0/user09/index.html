@@ -39,12 +39,10 @@
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
+
             <!--PRINT-->
             <script>
-                function printWindow(){
+                function printWindow() {
                     window.print();
                 }
             </script>
@@ -108,6 +106,9 @@
                 </div>
             </div>
         </div>
+
+        <h1 style="display: inline-block;" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School
+        </h1>
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -178,7 +179,7 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i++) {
+                for (i = 0; i < x.length; i = i + 2) {
                     x[i].style.backgroundColor = "#17a2b8";
                 }
             }
@@ -186,6 +187,119 @@
                 document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
             }
         </script>
+        <script language="JavaScript">
+
+            var startTime = new Date();
+            var endTime = new Date();
+            var startPressed = false;
+            var bgChangeStarted = false;
+            var maxWait = 20;
+            var timerID;
+
+            function startTest() {
+                document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+                bgChangeStarted = true;
+                startTime = new Date();
+                document.getElementById("stopBtn1").innerHTML = '<input style="position:relative; left:100px; top:100px;" type="button" value="stop" onClick="stopTest()">';
+
+            }
+
+            function getRandomInt(min, max) {
+                min = Math.ceil(-200);
+                max = Math.floor(500);
+                stopBtnX = Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+            }
+
+            function getRandomInt(min, max) {
+                min = Math.ceil(-200);
+                max = Math.floor(500);
+                stopBtnY = Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+            }
+
+            function remark(responseTime) {
+                var responseString = "Cheater";
+                if (responseTime < 0.20)
+                    responseString = "Well done!";
+                if (responseTime >= 0.20 && responseTime < 0.30)
+                    responseString = "Nice!";
+                if (responseTime >= 0.40 && responseTime < 0.50)
+                    responseString = "Could be better...";
+                if (responseTime >= 0.50 && responseTime < 0.80)
+                    responseString = "Keep practicing!";
+                if (responseTime >= 0.80 && responseTime < 1.1)
+                    responseString = "Have you been day dreaming again?";
+                if (responseTime >= 1.1)
+                    responseString = "Did you fall asleep?";
+                return responseString;
+            }
+
+            function stopTest() {
+                if (bgChangeStarted) {
+                    endTime = new Date();
+                    var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
+
+                    document.body.style.background = "white";
+                    alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+                    startPressed = false;
+                    bgChangeStarted = false;
+                }
+                else {
+                    if (!startPressed) {
+                        alert("press start first to start test");
+                    }
+                    else {
+                        clearTimeout(timerID);
+                        startPressed = false;
+                        alert("cheater! you pressed too early!");
+                    }
+                }
+            }
+
+            var randMULTIPLIER = 0x015a4e35;
+            var randINCREMENT = 1;
+            var today = new Date();
+            var randSeed = today.getSeconds();
+            var stopBtnX;
+            var stopBtnY;
+
+            function randNumber() {
+                randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+                return ((randSeed >> 15) & 0x7fff) / 32767;
+            }
+
+            function startit() {
+                if (startPressed) {
+                    alert("Already started. Press stop to stop");
+                    return;
+                }
+                else {
+                    getRandom();
+                     document.getElementById("stopBtn1").innerHTML = '<input type="button" value="stop" onClick="stopTest()">';
+                    startPressed = true;
+                    timerID = setTimeout('startTest()', 6000 * randNumber());
+                }
+            }
+
+        </script>
+        <p>Test your Response time!</p>
+        Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+        <form name="response">
+            Change background color in:
+            <select name="bgColorChange">
+                <option selected>deeppink
+                <option>aliceblue
+                <option>crimson
+                <option>darkkhaki
+                <option>cadetblue
+                <option>darkorchid
+                <option>coral
+            </select>
+            <input type="button" value="start" onClick="startit()">
+            <span id="stopBtn1"> <input style="display: none;" type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn2"> <input style="display: none;" type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn3"> <input style="display: none;" type="button" value="stop" onClick="stopTest()"></span>
+        </form>
         <script id="shopping">
             const list = document.querySelector('ul');
             const input = document.querySelector('input');
