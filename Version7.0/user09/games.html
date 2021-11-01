@@ -6,7 +6,7 @@
 -->
 
 <head>
-    <title>Dynamic Webpage</title>
+    <title>Games</title>
 
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
@@ -31,18 +31,9 @@
 
     <style>
         /* Internal Styling Here */
-        .aqua {
-            background-color: rgb(0, 202, 202);
-        }
-
-        .btnborder {
-            border: rgb(0, 138, 138);
-            border-width: 5px;
-        }
-
-        .mw {
-            width: max-content;
-        }
+    .center {
+        text-align: center;
+    }
     </style>
 
 </head>
@@ -82,104 +73,9 @@
                 }
             </script>
 
-            <div class="container-fluid mt-3 mb-3">
-                <div class="row">
-                    <!--PRINT-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
-                            page</button>
-                    </div>
-                    <!--LENGTH-->
-                    <div class="col-md-3">
-                        <button class="btn btn-dark btn-md" onclick="getLength()">The title has this many
-                            characters</button>
-                    </div>
-                    <div class="col-md-1">
-                        <p id="length"></p>
-                    </div>
-                    <!--FOCUS-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getFocus()">Focus</button>
-                    </div>
-                    <!-- CLICK-->
-                    <div class="col-md-1">
-                        <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                        </form>
-                    </div>
-                    <!--DATE-->
-                    <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" onclick="getDate()">Get Date</button>
-                    </div>
-                    <div class="col-md-3">
-                        <p id="date"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h1 style="display:inline-block;" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
-        <hr>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
+        
 
-                </div>
-
-                <div class="col-md-2 text-center">
-                    <button class="btn btn-danger btn-lg mt-3 container" onclick="firstSelector()">Try it
-                        1</button>
-
-                    <button class="btn btn-info btn-lg mt-3 container" onclick="secondSelector()">Try it
-                        2</button>
-
-                    <button class="btn btn-secondary btn-lg mt-3 container" onclick="thirdSelector()">Try it
-                        3</button>
-
-                </div>
-
-                <div class="col-md-5">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button id="aggregating-list">Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <script id="lists">
+      <script id="lists">
             function firstSelector() {
                 document.querySelector("li").style.backgroundColor = "#dc3545";
             }
@@ -246,9 +142,9 @@
                 var i;
                 for (i = 1; i < 4; i++) {
                     getRandom();
-                    document.getElementById("stopBtn" + i).innerHTML = '<input style="padding: 0 20px; position: relative; left:' + stopBtnX + 'px; top:' + stopBtnY + 'px;" type="button" value="' + i + '" onClick="stopTest()">';
+                    document.getElementById("stopBtn" + i).innerHTML = '<input style="padding: 0 20px; position: relative; left:' + stopBtnX + 'px; top:'+ stopBtnY + 'px;" type="button" value="' + i + '" onClick="stopTest()">';
                 }
-
+                
             }
 
             function remark(responseTime) {
@@ -304,7 +200,8 @@
                     alert("Already started. Press stop to stop");
                     return;
                 }
-                else {
+                else 
+                {
                     getRandom();
                     startPressed = true;
                     timerID = setTimeout('startTest()', 6000 * randNumber());
@@ -330,71 +227,57 @@
             <span id="stopBtn1"> <input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
             <span id="stopBtn2"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
             <span id="stopBtn3"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
-        </form>
+        </form>        
     </main>
-    <!-----Roulette-->
-    <div>
-
-        <table width="350" cellspacing="0" cellpadding="0" style="margin-top: 50px;">
-            <tr>
-                <td><img src="images7/roulette.jpeg" width="152" height="216"></td>
-                <td>
-
-                    <form name="fire">
-                        Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
-
-                        <p>
-                            <input name="message" type="button" value="Play Roulette!" onClick="fireit()">
-                        </p>
-
-                    </form>
-                    <div>
-                        <div id="image" class="mw">
-                        </div>
-
-
-                        <script>
-
-                            //Russian Roulette Game- by javascriptkit.com
-                            //Visit JavaScript Kit (http://javascriptkit.com) for script
-                            //Credit must stay intact for use
-
-                            function fireit() {
-                                var theone = Math.floor(Math.random() * 6)
-
-
-
-
-                                if (theone <= document.fire.bullets.value - 1) {
-                                    document.getElementById("image").innerHTML = ("<img src='images7/dead.jpeg'>");
-                                    alert("Bang. You\'re dead!");
-                                }
-
-                                else {
-                                    document.fire.message.value = "Whew. Got lucky!"
-                                    setTimeout("document.fire.message.value='Play Roulette'", 500)
-                                    document.getElementById("image").innerHTML = ("<img src='images7/alive.jpeg'>");
-                                }
-                            }
-                        </script>
-                    </div>
-
-                    <p alignment="center">This free script provided by<br />
-                        <a href="http://javascriptkit.com">JavaScript
-                            Kit</a>
-                    </p>
-
-                </td>
-            </tr>
-        </table>
-    </div>
-    <!---Roulette Close-->
-
-
-    <div>
-        <button class="btn btn-primary btn-lg mt-2 container aqua btnborder" onclick="window.location.reload() "
-            style="margin: 30px; margin-top: 50px;">Reset Gamesw
-        </button>
+    
+  <div>
+    <table border="0" width="350" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img border="0" src="images7/roulette.jpeg" width="152" height="216"></td>
+          <td>
+      
+      <form name="fire">
+      Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+      
+      <p>
+      <input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+      </p>
+      
+      </form>
+      <div>
+       
+      </div>
+      <script>
+      
+      //Russian Roulette Game- by javascriptkit.com
+      //Visit JavaScript Kit (http://javascriptkit.com) for script
+      //Credit must stay intact for use
+      
+      function fireit(){
+      var theone=Math.floor(Math.random()*6)
+      
+      if (theone<=document.fire.bullets.value-1)
+      alert("Bang. You\'re dead!")
+      else{
+      document.fire.message.value="Whew. Got lucky!"
+      setTimeout("document.fire.message.value='Play Roulette'",500)
+      }
+      }
+      
+      </script>
+      
+      <p align="center">This free script provided by<br />
+      <a href="http://javascriptkit.com">JavaScript
+      Kit</a></p>
+      
+      </td>
+        </tr>
+      </table>
+  </div>
+  <div>
+    <button class="btn btn-primary btn-lg mt-2 container" onclick="window.location.reload()">Reload Page
+       </button>
+</div>
 </body>
 
 </html>
