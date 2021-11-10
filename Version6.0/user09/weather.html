@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>Fakarava Atoll: Geography</title>
+    <title>Fakarava Atoll: Weather</title>
     <link rel="icon" type="image/x-icon" href="images/favicon3.ico" />
 
     <!-- Meta -->
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Custom -->
     <link rel="stylesheet" href="CSS/style6.css">
+    <link rel="stylesheet" href="CSS/weatherstyle.css">
 
     <!-- JavaScript -->
 
@@ -33,7 +34,7 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-
+    
     </style>
 </head>
 
@@ -49,10 +50,9 @@
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
-
                     <a href="thingtodo.html" class="nav-item nav-link">Things To Do</a>
-                    <a href="geography.html" class="nav-item nav-link active">Geography</a>
-                    <a href= "weather.html" class = "nav-item nav-link "> Weather</a>
+                    <a href="geography.html" class="nav-item nav-link">Geography</a>
+                    <a href= "weather.html" class = "nav-item nav-link active"> Weather</a>
 
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
@@ -65,51 +65,74 @@
 
     <header class="ttd side h3">
         <p>
-            Geography Of The Island
+            Weather Of The Island
         </p>
     </header>
-    <div class="back side bottomzero">
-        <div class="row grid side">
+    <div class="back side bottomzero" >
+        <div class="row grid side" > </div>
 
-            <div class="col-md-4 col-lg 3">
-                <div class="demo-content bg-alt"><img src="images/SpaceView.png" class="img" style="width: 100%;"></div>
-            </div>
-            <div class="col-md-4 col-lg 3">
-                <div class="demo-content bg-alt"><img src="images/rectangle.jpeg" class="img"></div>
-            </div>
-            <div class="col-md-4 col-lg-6">
-                <div class="demo-content"> The first image on the left is the location of the Fakarava Atoll from a view
-                    from space. As you can
-                    see
-                    it is pretty far away from any big landmasses. It is about halfway in between the United States and
-                    Australia. It is 280 miles north-east of the main island, Tafiti. It has the coordinates of 16.31° S
-                    and 145.62° W. Technically, Fakarava isn't actually an island, it's and atoll. An atoll is defined
-                    as
-                    a ring-shaped island or chain of islands, formed by coral. This "ring" is more of a rectangle, (the
-                    image on the right) made of four sides,
-                    and two sets of fairly congruent sides. It has an opening of both of the sides, both known to divers
-                    around the
-                    world as beautiful spots to visit and explore. It is a very beautiful place to explore ith all its
-                    wildlife.
-                </div>
-            </div>
-
-
-        </div>
-        <div class="col-md-4 col-lg 12">
+        <div class="col-md-4 col-lg 12" >
             <div class="demo-content cont">
-                It is an atoll in the west of the Tuamotu group in French Polynesia. It is the second largest of the
-                Tuamotu atolls. The nearest land is Toau Atoll, which lies 8.7 miles to the northwest.
-                The opening in the north side, the Pass Guraue, is the largest in all French Polynesia. It has one main 
-                villiage, called Rotoava, which is where the majority of the 837 permanent residents stay. It became a part
-                of the UNESCO as a biosphere reserve. This basically means that the U.N. and the residents of the area protect
-                the nature and wildlife from harm as much as they can. In conclusion, the Fakarava Atoll is a very beautiful 
-                place with many pretty sights, amazing wildlife, and a perfect place for a nice, relaxing vacations.
+               The Fakarava Atoll and all of French Polynesia has a tropical, but moderate climate. There are two main seasons you will find here:
+a warm, rainy season from November to April, and a relativly cool dry season from May to October. The temperature varies only slightly throughout 
+the year. At Papeete the average annual temperature is 79 °F (26 °C); the high average is 91 °F (33 °C) in March and the low average 70 °F (21 °C) 
+in August. The Tubuai Islands, farther south, have a cooler climate; the low average can go down to 64 °F (18 °C) in September. The relative humidity
+ is always high—generally between 80 and 90 percent. The more elevated areas are continually enveloped in heavy cloud formations. (Brittanica.com)
+
             </div>
         </div>
     </div>
 
-    <div id="myProgress" >
+
+
+    <div class="container apic" >
+        <h1><b>Weather</b></h1>
+        <h6>Search French Polynesia to find the weather of this area, or search anywhere else in the world.
+             Just make sure to spell the location correctly. Once you get the temperature it will be in 
+             Celsius so insert that number into the converter below for the temperature in Fahrenheit. </h6>
+        <input type="text" class="inputTxt" placeholder="Enter City....."> <br>
+        <input type="submit" value="Submit" class="btn">
+        <div class="showData"></div>
+        
+    </div>
+
+    <script src="./main.js"></script>
+
+    <!----Temp Converter-->
+    
+<table class="tcc">
+   <tr>
+       <td>
+        <h2>Temperature Converter</h2>
+       </td>
+   </tr>
+<tr>
+<td>
+    <p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+
+    <p>
+      <label>Celsius</label>
+      <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+    </p>
+    <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+    
+    <script>
+    function temperatureConverter(valNum) {
+      valNum = parseFloat(valNum);
+      document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+    }
+    </script>
+
+
+
+</td>
+</tr>
+</table>
+
+
+    <!----Temp Converter-->
+
+    <div id="myProgress">
         <div id="myBar"></div>
       </div>
       
@@ -136,7 +159,6 @@
         }
       }
       </script>
-
 
 </body>
 <footer class="page-footer font-small teal pt-4">
@@ -174,11 +196,11 @@
                 <table id="hireButtons">
                     <tr>
                         <td>
-                            <button class="button"><a href="thingtodo.html" class="nav-item nav-link active">Previous
+                            <button class="button"><a href="geography.html" class="nav-item nav-link active">Previous
                                     Page</a></button>
                         </td>
                         <td>
-                            <button class="button"><a href="weather.html" class="nav-item nav-link active"> Next
+                            <button class="button" onclick="myAlert1()"><a href="index.html" class="nav-item nav-link active"> Home
                                     Page</a></button>
                         </td>
 
@@ -194,8 +216,13 @@
 
     </div>
 
-
+    You finished! Now you know everything you need to know about the small island of Fakarava in French Polynesia.
   
+    <script>
+        function myAlert1() {
+          alert("Congrats, you finished! Now you know everything you will ever need to know about the small island of Fakarava in French Polynesia.");
+        }
+        </script>
 
 </footer>
 

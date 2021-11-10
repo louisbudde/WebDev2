@@ -13,9 +13,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="About The Island"   
-
-    <!-- CSS -->
+    <meta name="description" content="About The Island">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -24,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Custom -->
     <link rel="stylesheet" href="CSS/style6.css">
+
+    <link rel="stylesheet" href="font/Rimouski.css">
 
     <!-- JavaScript -->
 
@@ -72,17 +72,30 @@
             margin-left: 20px;
             margin-right: 20px;
         }
+
         .button {
             border-radius: 8px;
             font-size: 20px;
             margin: 10px;
             background-color: rgb(0, 81, 128);
-            color:rgb(255, 252, 217);
+            color: rgb(255, 252, 217);
         }
+
         .a {
             color: rgb(255, 252, 217);
         }
-        
+
+
+        #myProgress {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        #myBar {
+            width: 1%;
+            height: 30px;
+            background-color: #041daa;
+        }
     </style>
 </head>
 
@@ -100,6 +113,7 @@
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="thingtodo.html" class="nav-item nav-link">Things To Do</a>
                     <a href="geography.html" class="nav-item nav-link">Geography</a>
+                    <a href= "weather.html" class = "nav-item nav-link "> Weather</a>
 
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
@@ -109,7 +123,64 @@
             </div>
         </nav>
     </menu>
-    <img src="images/fakarava1.jpeg" width="100%" class="top">
+<!---Carousel Open-->
+<!-- Slideshow container -->
+<div class= "grey grid2">
+
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/fakarava1.jpeg" style="width:100%">
+     
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/fakarava2.jpeg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/fakarava3.jpeg" style="width:100%">
+      
+    </div>
+  
+    
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active2", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active2";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+    </script>
+</div>   
+<!--Carousel Close-->
     <div class="h3">
         <h3> Fakarava Atoll </h3>
     </div>
@@ -117,12 +188,45 @@
         <p>Fakarava Atoll is a coral ring located in French Polynesia. It has a somewhat rectangular shape with a length
             of 37 miles and a width of 13 miles. It has a land area of 9 square miles and one main village with a
             population of around 850. It has one main passage to the North, the Garuae passage, and one to the south,
-            the Tumakohua pass. The Pacific water flows through these passes through and gives a very diverse ecosystem. It is very abundant
+            the Tumakohua pass. The Pacific water flows through these passes through and gives a very diverse ecosystem.
+            It is very abundant
             in marine wildlife, with a good population of manta rays, dolphins, turles, coral, barracudas, and more. It
             is one of the most pristine and undisturbed coral reefs in the world. It also the highest grey reef shark
-            concentration in the world. But don't worry, they don't attack humans. 
+            concentration in the world. But don't worry, they don't attack humans.
         </p>
     </div>
+
+   
+
+        
+
+<div id="myProgress" >
+  <div id="myBar"></div>
+</div>
+
+<br>
+<button onclick="move()">Click Me</button> 
+
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+</script>
 
 </body>
 <footer class="page-footer font-small teal pt-4">
@@ -147,28 +251,29 @@
                     and all the coding.
                     I'm not the most creative person, so to pick my topic I went to Google Earth and clicked "I'm
                     Feeling Lucky", which
-                    gives you a random location. We used all kinds of tools to make our websites including Github, 
-                    Visual Studio Code, Bootstrap, and more. 
+                    gives you a random location. We used all kinds of tools to make our websites including Github,
+                    Visual Studio Code, Bootstrap, and more.
                 </p>
-
             </div>
 
             <div class="col-md-4 mt-md-0 mt-3">
 
 
-                
+
                 <table id="hireButtons">
                     <tr>
                         <td>
-                            <button class="button"><a href="index.html" class="nav-item nav-link active">Previous Page</a></button>
+                            <button class="button"><a href="index.html" class="nav-item nav-link active">Previous
+                                    Page</a></button>
                         </td>
                         <td>
-                            <button class="button"><a href="thingtodo.html" class="nav-item nav-link active"> Next Page</a></button>
+                            <button class="button"><a href="thingtodo.html" class="nav-item nav-link active"> Next
+                                    Page</a></button>
                         </td>
-                        
+
                     </tr>
                 </table>
-                   
+
 
             </div>
 
@@ -179,7 +284,8 @@
     </div>
 
 
-  
+
+
 
 
 </footer>
